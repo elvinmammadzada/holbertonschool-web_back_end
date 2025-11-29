@@ -11,3 +11,4 @@ def schools_by_topic(mongo_collection, topic):
     Return: list of schools containing topic in their 'topics' field
     """
     return list(mongo_collection.find({"topics": topic}))
+
