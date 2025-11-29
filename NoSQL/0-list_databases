@@ -1,0 +1,4 @@
+#!/bin/bash
+# 0-list_databases
+
+mongo --quiet --eval "db.adminCommand('listDatabases').databases.forEach(function(d) { print(d.name, d.sizeOnDisk.toFixed(3)+'GB'); })"
